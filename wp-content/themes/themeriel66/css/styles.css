@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
+
+.container {
+  margin: 0 auto;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sect {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+}
+
+/* Картинка и аватар */
+.welcome {
+  background-image: url('../img/welcome.jpg');
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  height: 320px;
+  margin: 0 auto;
+  width: 100%;
+}
+.welcome__experience,
+.welcome__work {
+  color: #fff;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  /* padding-left: 196px; */
+}
+.welcome__experience {
+  font-size: 32px;
+  padding-top: 8px;
+}
+.welcome__work{
+  font-size: 24px;
+}
+.welcome__slogan {
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  padding-left: 288px;
+  padding-top: 48px;
+}
+.welcome__avatar {
+  position: relative;
+  text-align: center;
+  bottom: -80px;
+}
+.welcome__avatar__image {
+  height: 196px;
+}
+
+/* Лого и контакты */
+.header {
+  margin-top: 96px;
+}
+.header__container {
+  padding-bottom: 16px;
+}
+.header__whoami {
+  float: left;
+  position: relative;
+  width: 300px;
+}
+.header__contacts {
+  float: right;
+  position: relative;
+  width: 300px;
+}
+.header__container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+  .header__whoami__lastname,
+  .header__whoami__firstname {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+  }
+  .header__whoami__lastname,
+  .header__whoami__firstname,
+  .header__whoami__description {
+    position: absolute;
+  }
+  .header__whoami__lastname {
+    font-weight: 800;
+    top: -16px;
+  }
+  .header__whoami__firstname {
+    top: 20px;
+  }
+  .header__whoami__description {
+    color: #333;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    top: 64px;
+  }
+
+.header__contacts__callme {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  text-align: right;
+}
+.header__contacts__icons {
+  text-align: right;
+}
+.header__contacts__icons__iconlink {
+  color: #409dd7;
+}
+.header__contacts__icons__icon {
+  display: inline-block;
+  font-size: 32px;
+  margin-left: 32px;
+}
+.header__divider {
+  border-top: 3px solid #dcdcdc;
+  margin-bottom: 32px;
+  margin-top: 16px;
+}
+
+/* Услуги */
+.services__header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.services__list {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+}
+.services__listitem_name,
+.services__listitem_description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-left: 24px;
+}
+.services__listitem_name {
+  margin-top: 8px;
+  position: relative;
+}
+.services__listitem_name:before {
+  content: "—";
+  position: absolute;
+  left: -24px;
+}
+.services__listitem_description {
+  color: #777;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Получить консультацию */
+.callback__divider {
+  border-top: 16px solid #4ca6de;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.callback__content {
+  padding: 0 64px;
+}
+.callback__header {
+  font-family: 'Helvetica', sans-serif;
+  font-kerning: auto;
+  font-size: 24px;
+  font-weight: 800;
+  /* letter-spacing: -0.07em; */
+  margin: 0;
+  /* margin-top: 16px; */
+  text-align: center;
+  text-transform: uppercase;
+}
+.callback__paragraph_for_textbox:first-of-type {
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.callback__paragraph_for_textbox:last-of-type {
+  margin: 0;
+  margin-bottom: 16px;
+}
+.callback__textbox {
+  border: 2px solid #101010;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  height: 38px;
+  outline: none;
+  text-align: center;
+  width: 100%;
+}
+.callback__textbox:focus {
+  border: 2px solid #4ca6de;
+}
+.callback__buttons__button_submit {
+  background-color: #4ca6de;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  height: 38px;
+  letter-spacing: 0.015em;
+  outline: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+/* Футер */
+.footer {
+  background-color: #101010;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.50;
+  margin-top: 64px;
+  padding: 24px 0;
+  text-align: center;
+}
+.footer__copyright {
+  margin-bottom: 8px;
+}
+.footer__contact {
+  display: inline-block;
+  margin-left: 16px;
+}
+.footer__contact:first-of-type {
+  margin-left: 0;
+}
+.footer__icon {
+  margin-right: 4px;
+}
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__link:hover {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.75);
+  /* color: #409dd7; */
+}
+
+/* Адаптивность */
+@media (min-width: 200px) and (max-width: 480px) {
+  .sect {
+    box-sizing: border-box;
+    padding: 0 24px;
+    width: 100%;
+  }
+  .welcome {
+    height: 300px;
+    width: 100%;
+  }
+  .welcome__experience {
+    font-size: 32px;
+    padding: 8px 8px 0 0;
+    text-align: right;
+  }
+  .welcome__work {
+    font-size: 18px;
+    line-height: 0.5;
+    padding: 0 8px 0 0;
+    text-align: right;
+  }
+  .welcome__slogan {
+    font-size: 12px;
+    padding: 32px 8px 0 0;
+    text-align: right;
+  }
+  .welcome__avatar {
+    bottom: -112px;
+  }
+  .welcome__avatar__image {
+    height: 196px;
+  }
+
+  .header__whoami,
+  .header__contacts {
+    float: none;
+    margin-top: 64px;
+    text-align: center;
+    width: 100%;
+  }
+  .header__whoami__lastname,
+  .header__whoami__firstname,
+  .header__whoami__description {
+    position: relative;
+    top: 26px;
+  }
+  .header__whoami__lastname {
+    font-weight: 700;
+    top: 32px;
+  }
+  .callback {
+    margin-top: 48px;
+  }
+  .callback__content {
+    padding: 0;
+  }
+  .header__contacts__callme {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .header__contacts__icons {
+    text-align: center;
+  }
+  .header__contacts__icons__icon:first-of-type {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .sect {
+    padding: 0 32px;
+    width: 100%;
+  }
+  .header__whoami__lastname,
+  .header__whoami__firstname {
+    font-size: 30px;
+  }
+  .welcome {
+    width: 100%;
+  }
+  .callback {
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 959px) {
+  .welcome {
+    background-size: 100%;
+    width: 100%;
+  }
+  .sect {
+    width: 80%;
+  }
+  .callback {
+    width: 500px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    box-sizing: border-box;
+    padding: 0 30px;
+    width: 960px;
+  }
+  .sect {
+    width: 960px;
+  }
+  .welcome {
+    background-size: 100%;
+    width: 100%;
+  }
+  .welcome__experience {
+    font-size: 48px;
+    line-height: 0.55;
+    /* margin-left: 20%; */
+    padding-top: 32px;
+  }
+  .welcome__work{
+    font-size: 32px;
+    /* margin-left: 20%; */
+  }
+  .welcome__slogan {
+    font-size: 18px;
+    padding: 32px 0 0 0;
+    text-align: center;
+  }
+  .welcome__avatar {
+    position: relative;
+    text-align: center;
+    bottom: -8px;
+  }
+  .welcome__avatar__image {
+    height: 312px;
+  }
+  .header {
+    margin-top: 48px;
+  }
+  .services {
+    float: left;
+    width: 500px;
+  }
+  .callback {
+    float: left;
+    width: 400px;
+  }
+  .callback__content {
+    padding: 0;
+  }
+  .callback__divider {
+    display: none;
+  }
+}
