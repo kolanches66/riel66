@@ -8,50 +8,75 @@
   display: table;
   clear: both;
 }
+.container__divider {
+  border: 0;
+  border-top: 16px solid rgba(76, 166, 222, 0.1);
+  margin-bottom: 48px;
+  margin-top: 48px;
+  width: 100%;
+}
+
 .sect {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 32px;
+  /*padding: 0 32px;*/
   width: 100%;
+}
+.sect__header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.sect__content__paragraph {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.50;
 }
 
 /* Картинка и аватар */
 .welcome {
+  background-attachment: fixed;
+  background-color: #409dd7;
   background-image: url('../img/welcome.jpg');
+  background-position-x: center;
   background-repeat: no-repeat;
-  background-size: 1200px;
   height: 320px;
   margin: 0 auto;
+  position: relative;
   width: 100%;
 }
 .welcome__experience,
 .welcome__work {
   color: #fff;
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
-  /* padding-left: 196px; */
 }
 .welcome__experience {
-  font-size: 32px;
-  padding-top: 8px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.0;
+  padding-top: 42px;
 }
 .welcome__work{
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: 400;
 }
 .welcome__slogan {
   color: #fff;
   font-family: 'PT Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
-  padding-left: 288px;
-  padding-top: 48px;
+  padding-top: 32px;
+  text-align: center;
 }
 .welcome__avatar {
-  position: relative;
+  position: absolute;
   text-align: center;
-  bottom: -80px;
+  width: 100%;
 }
 .welcome__avatar__image {
   height: 196px;
@@ -60,7 +85,8 @@
 /* Лого и контакты */
 .header {
   box-sizing: content-box;
-  margin-top: 96px;
+  margin-top: 32px;
+  margin-bottom: 80px;
 }
 .header__container {
   padding-bottom: 16px;
@@ -71,9 +97,11 @@
   width: 300px;
 }
 .header__contacts {
+  box-sizing: border-box;
   float: right;
+  padding: 0 0 0 32px;
   position: relative;
-  width: 300px;
+  width: 400px;
 }
 .header__container:after {
   clear: both;
@@ -82,7 +110,7 @@
 }
   .header__whoami__lastname,
   .header__whoami__firstname {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: -0.05em;
@@ -92,29 +120,31 @@
   .header__whoami__description {
     position: absolute;
   }
-  .header__whoami__lastname {
-    font-weight: 800;
-    top: -16px;
-  }
-  .header__whoami__firstname {
-    top: 20px;
-  }
   .header__whoami__description {
     color: #333;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 14px;
-    top: 64px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0.10em;
+    margin-left: 4px;
+    top: -4px;
+  }
+  .header__whoami__lastname {
+    top: 16px;
+  }
+  .header__whoami__firstname {
+    top: 48px;
   }
 
 .header__contacts__callme {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   margin-top: 8px;
-  text-align: right;
+  text-align: center;
 }
 .header__contacts__icons {
-  text-align: right;
+  text-align: center;
 }
 .header__contacts__icons__iconlink {
   color: #409dd7;
@@ -122,7 +152,8 @@
 .header__contacts__icons__icon {
   display: inline-block;
   font-size: 32px;
-  margin-left: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 .header__divider {
   border-top: 3px solid #dcdcdc;
@@ -131,46 +162,63 @@
 }
 
 /* Услуги */
-.services__header {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  margin: 0;
+/*.services__header {*/
+/*  font-family: 'Open Sans', sans-serif;*/
+/*  font-size: 24px;*/
+/*  font-weight: 700;*/
+/*  letter-spacing: -0.05em;*/
+/*  margin: 0;*/
+/*  margin-bottom: 16px;*/
+/*}*/
+.services__list {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+.services__listitem {
   margin-bottom: 16px;
 }
-.services__list {
-  margin: 0;
-  margin-bottom: 32px;
-  padding: 0;
-}
-.services__listitem_name,
-.services__listitem_description {
+.services__card {
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: table;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  margin-left: 24px;
+  padding: 16px;
+  position: relative;
+  width: 100%;
 }
-.services__listitem_name {
-  margin-top: 8px;
+.services__card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.services__card__icon {
+  display: table-cell;
   position: relative;
 }
-.services__listitem_name:before {
-  content: "—";
-  position: absolute;
-  left: -24px;
+.services__card__icon,
+.services__card__icon__image {
+  height: 48px;
+  width: 48px;
 }
-.services__listitem_description {
-  color: #777;
-  font-size: 13px;
+.services__card__text {
+  display: table-cell;
+  padding-left: 24px;
+  vertical-align: middle;
+}
+.services__card__header {
+  color: #101010;
+  font-size: 18px;
+  font-weight: 500;
+}
+.services__card__description {
+  color: #999;
+  font-size: 14px;
   margin-top: 4px;
 }
 
 /* Получить консультацию */
-.callback__divider {
-  border-top: 16px solid #4ca6de;
-  margin: 0;
-  margin-bottom: 8px;
-}
 .callback__content {
   padding: 0 64px;
 }
@@ -179,11 +227,15 @@
   font-kerning: auto;
   font-size: 24px;
   font-weight: 800;
-  /* letter-spacing: -0.07em; */
   margin: 0;
-  /* margin-top: 16px; */
   text-align: center;
   text-transform: uppercase;
+}
+.callback__description {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
 }
 .callback__paragraph_for_textbox:first-of-type {
   margin: 0;
@@ -198,7 +250,7 @@
   border: 2px solid #101010;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   height: 38px;
   outline: none;
   text-align: center;
@@ -212,14 +264,15 @@
   border: 0;
   color: #fff;
   cursor: pointer;
-  font-family: "Helvetica", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   height: 38px;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.01em;
   outline: none;
   text-transform: uppercase;
   width: 100%;
 }
+
 /* Футер */
 .footer {
   background-color: #101010;
@@ -250,34 +303,33 @@
 }
 .footer__link:hover {
   border-bottom: 1px solid rgba(200, 200, 200, 0.75);
-  /* color: #409dd7; */
 }
 
 /* Адаптивность */
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 200px) and (max-width: 659px) {
   .sect {
     box-sizing: border-box;
     padding: 0 24px;
     width: 100%;
   }
   .welcome {
-    height: 300px;
+    background-size: 150%;
     width: 100%;
   }
   .welcome__experience {
     font-size: 32px;
-    padding: 8px 8px 0 0;
+    padding: 8px 16px 0 0;
     text-align: right;
   }
   .welcome__work {
     font-size: 18px;
     line-height: 0.5;
-    padding: 0 8px 0 0;
+    padding: 0 16px 0 0;
     text-align: right;
   }
   .welcome__slogan {
     font-size: 12px;
-    padding: 32px 8px 0 0;
+    padding: 32px 16px 0 0;
     text-align: right;
   }
   .welcome__avatar {
@@ -286,7 +338,9 @@
   .welcome__avatar__image {
     height: 196px;
   }
-
+  .header {
+    margin-top: 80px;
+  }
   .header__whoami,
   .header__contacts {
     float: none;
@@ -299,6 +353,10 @@
   .header__whoami__description {
     position: relative;
     top: 26px;
+  }
+  .header__whoami__lastname,
+  .header__whoami__firstname {
+    font-size: 30px;
   }
   .header__whoami__lastname {
     font-weight: 700;
@@ -322,8 +380,9 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
+@media (min-width: 660px) and (max-width: 800px) {
   .sect {
+    box-sizing: border-box;
     padding: 0 32px;
     width: 100%;
   }
@@ -332,78 +391,97 @@
     font-size: 30px;
   }
   .welcome {
+    background-size: 150%;
     width: 100%;
+  }
+  .welcome__avatar {
+    bottom: -98px;
+  }
+  .welcome__avatar__image {
+    height: 196px;
+  }
+  .header__contacts__callme,
+  .header__contacts__icons{
+    text-align: right;
+  }
+  .header__contacts__icons__icon:last-child {
+    margin-right: 0;
   }
   .callback {
     margin-top: 48px;
   }
 }
 
-@media (min-width: 801px) and (max-width: 959px) {
-  .welcome {
-    background-size: 100%;
-    width: 100%;
+@media (min-width: 801px) and (max-width: 1059px) {
+  .container__divider {
+    border-radius: 5px;
+    width: 320px;
   }
   .sect {
-    width: 80%;
+    box-sizing: border-box;
+    padding: 0 32px;
+    width: 100%;
+  }
+  .welcome {
+    background-size: 125%;
+    width: 100%;
+  }
+  .welcome__avatar {
+    bottom: -128px;
+  }
+  .welcome__avatar__image {
+    height: 256px;
+  }
+  .header__contacts__callme,
+  .header__contacts__icons{
+    text-align: right;
+  }
+  .header__contacts__icons__icon:last-child {
+    margin-right: 0;
   }
   .callback {
+    margin-top: 48px;
     width: 500px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1060px) {
   .container {
-    /*box-sizing: border-box;*/
-    /*padding: 0 30px;*/
     padding: 0;
     width: 960px;
+  }
+  .container__divider {
+    border-radius: 5px;
+    width: 320px;
   }
   .sect {
     width: 960px;
   }
   .welcome {
-    background-size: 100%;
+    background-size: 110%;
     width: 100%;
   }
-  .welcome__experience {
-    font-size: 48px;
-    line-height: 0.55;
-    /* margin-left: 20%; */
-    padding-top: 32px;
-  }
-  .welcome__work{
-    font-size: 32px;
-    /* margin-left: 20%; */
-  }
-  .welcome__slogan {
-    font-size: 18px;
-    padding: 32px 0 0 0;
-    text-align: center;
-  }
   .welcome__avatar {
-    position: relative;
-    text-align: center;
-    bottom: -8px;
+    bottom: -156px;
   }
   .welcome__avatar__image {
     height: 312px;
   }
-  .header {
-    margin-top: 48px;
-  }
   .services {
     float: left;
+    padding: 0 32px 0 0;
     width: 560px;
   }
   .callback {
     float: right;
+    margin-top: 44px;
+    padding: 0 0 0 32px;
     width: 400px;
   }
   .callback__content {
     padding: 0;
   }
-  .callback__divider {
-    display: none;
-  }
+  /*.callback__divider {*/
+  /*  display: none;*/
+  /*}*/
 }

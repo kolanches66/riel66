@@ -32,7 +32,6 @@
 <section class="welcome">
     <h1 class="welcome__experience">12 лет</h1>
     <h2 class="welcome__work">работы в недвижимости</h2>
-    <div class="welcome__slogan">риэлтор, которого вы искали</div>
     <div class="welcome__avatar">
         <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/img/ponomareva_marina.png" alt="">
     </div>
@@ -41,9 +40,9 @@
 <header class="sect header">
     <div class="header__container">
         <div class="header__whoami">
+            <div class="header__whoami__description">Агент по недвижимости</div>
             <div class="header__whoami__lastname">Пономарева</div>
             <div class="header__whoami__firstname">Марина</div>
-            <div class="header__whoami__description">агент по недвижимости</div>
         </div>
         <div class="header__contacts">
             <div class="header__contacts__callme">Свяжитесь со мной:</div>
@@ -71,6 +70,6 @@
             </div>
         </div>
     </div>
-    <hr class="header__divider">
+<!--    <hr class="header__divider">-->
 </header>
 <body <?php body_class(); ?>>

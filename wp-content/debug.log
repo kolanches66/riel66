@@ -1,0 +1,7 @@
+[01-Jun-2019 12:12:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mp_feedback_form() in /media/sf_ubuntu_vm/www/wordpress.local/html/wp-content/themes/themeriel66/index.php:22
+Stack trace:
+#0 /media/sf_ubuntu_vm/www/wordpress.local/html/wp-includes/template-loader.php(78): include()
+#1 /media/sf_ubuntu_vm/www/wordpress.local/html/wp-blog-header.php(19): require_once('/media/sf_ubunt...')
+#2 /media/sf_ubuntu_vm/www/wordpress.local/html/index.php(17): require('/media/sf_ubunt...')
+#3 {main}
+  thrown in /media/sf_ubuntu_vm/www/wordpress.local/html/wp-content/themes/themeriel66/index.php on line 22
