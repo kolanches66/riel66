@@ -59,6 +59,7 @@
 
 /* Лого и контакты */
 .header {
+  box-sizing: content-box;
   margin-top: 96px;
 }
 .header__container {
@@ -353,8 +354,9 @@
 
 @media (min-width: 960px) {
   .container {
-    box-sizing: border-box;
-    padding: 0 30px;
+    /*box-sizing: border-box;*/
+    /*padding: 0 30px;*/
+    padding: 0;
     width: 960px;
   }
   .sect {
@@ -392,10 +394,10 @@
   }
   .services {
     float: left;
-    width: 500px;
+    width: 560px;
   }
   .callback {
-    float: left;
+    float: right;
     width: 400px;
   }
   .callback__content {
