@@ -48,6 +48,10 @@
   position: relative;
   width: 100%;
 }
+.welcome__darkness {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+}
 .welcome__experience,
 .welcome__work {
   color: #fff;
@@ -458,7 +462,8 @@
     width: 960px;
   }
   .welcome {
-    background-size: 110%;
+    background-size: 150%;
+    background-position-y: bottom;
     width: 100%;
   }
   .welcome__avatar {
@@ -481,7 +486,4 @@
   .callback__content {
     padding: 0;
   }
-  /*.callback__divider {*/
-  /*  display: none;*/
-  /*}*/
 }

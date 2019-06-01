@@ -30,10 +30,12 @@
 
 <body>
 <section class="welcome">
-    <h1 class="welcome__experience">12 лет</h1>
-    <h2 class="welcome__work">работы в недвижимости</h2>
-    <div class="welcome__avatar">
-        <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/img/ponomareva_marina.png" alt="">
+    <div class="welcome__darkness">
+        <h1 class="welcome__experience">12 лет</h1>
+        <h2 class="welcome__work">работы в недвижимости</h2>
+        <div class="welcome__avatar">
+            <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/img/ponomareva_marina.png" alt="">
+        </div>
     </div>
 </section>
 
