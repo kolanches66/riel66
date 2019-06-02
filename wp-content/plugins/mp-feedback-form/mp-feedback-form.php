@@ -54,10 +54,10 @@ function form_validation($name, $phone)  {
 }
 
 function complete_registration() {
-    global $reg_errors, $name, $phone;
-    if (count($reg_errors->get_error_messages()) <= 0) {
-        echo 'Спасибо, ожидайте звонка';
-    }
+//    global $reg_errors, $name, $phone;
+//    if (count($reg_errors->get_error_messages()) <= 0) {
+//        echo 'Спасибо, ожидайте звонка';
+//    }
 }
 
 function form_shortcode() {

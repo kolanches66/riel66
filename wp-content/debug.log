@@ -5,3 +5,4 @@ Stack trace:
 #2 /media/sf_ubuntu_vm/www/wordpress.local/html/index.php(17): require('/media/sf_ubunt...')
 #3 {main}
   thrown in /media/sf_ubuntu_vm/www/wordpress.local/html/wp-content/themes/themeriel66/index.php on line 22
+[02-Jun-2019 01:15:12 UTC] PHP Notice:  Undefined index: phone in /media/sf_ubuntu_vm/www/wordpress.local/html/wp-content/plugins/mp-feedback-form/mp-feedback-form.php on line 12

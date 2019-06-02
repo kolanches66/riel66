@@ -60,8 +60,11 @@
     <div class="header__container">
         <div class="header__whoami">
             <div class="header__whoami__description">Агент по недвижимости</div>
-            <div class="header__whoami__lastname">Пономарева</div>
-            <div class="header__whoami__firstname">Марина</div>
+            <div class="header__whoami__name">
+                <a class="header__whoami__homelink" href="/">Пономарева<br>Марина</a>
+            </div>
+<!--            <div class="header__whoami__lastname">Пономарева</div>-->
+<!--            <div class="header__whoami__firstname">Марина</div>-->
         </div>
         <div class="header__contacts">
             <div class="header__contacts__callme">Свяжитесь со мной:</div>
