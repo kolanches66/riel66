@@ -28,7 +28,7 @@
   font-weight: 700;
   letter-spacing: -0.05em;
   margin: 0;
-  margin-bottom: 16px;
+  /*margin-bottom: 16px;*/
 }
 .sect__content__paragraph {
   font-family: 'PT Sans', sans-serif;
@@ -47,7 +47,8 @@
 }
 .topcontacts__contact {
   display: inline-block;
-  margin-right: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 .topcontacts__contact,
 .topcontacts__link{
@@ -62,6 +63,12 @@
 .topcontacts__text {
   display: inline-block;
 }
+.topcontacts__icon {
+  font-size: 14px;
+  margin-right: 5px;
+  vertical-align: baseline;
+}
+
 
 
 
@@ -92,7 +99,7 @@
   font-size: 48px;
   font-weight: 800;
   line-height: 1.0;
-  padding-top: 55px;
+  padding-top: 64px;
 }
 .welcome__work{
   font-size: 32px;
@@ -268,7 +275,7 @@
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   margin-top: 8px;
-  text-align: center;
+  text-align: left;
 }
 .callback__paragraph_for_textbox:first-of-type {
   margin: 0;
@@ -350,22 +357,13 @@
     width: 100%;
   }
   .welcome__experience {
-    font-size: 32px;
-    /*padding: 8px 16px 0 0;*/
+    font-size: 48px;
     padding-top: 96px;
-    /*text-align: center;*/
   }
   .welcome__work {
-    font-size: 18px;
-    line-height: 0.5;
-    /*padding: 0 16px 0 0;*/
-    /*text-align: right;*/
+    font-size: 32px;
+    line-height: 0.75;
   }
-  /*.welcome__slogan {*/
-  /*  font-size: 12px;*/
-  /*  padding: 32px 16px 0 0;*/
-  /*  text-align: right;*/
-  /*}*/
   .welcome__avatar {
     bottom: -112px;
   }
@@ -509,7 +507,6 @@
   }
   .callback {
     float: right;
-    margin-top: 44px;
     padding: 0 0 0 32px;
     width: 400px;
   }

@@ -16,9 +16,9 @@ function form_handler() {
 
 function form_create() {
     echo '
-    <h2 class="callback__header">Заинтересованы?</h2>
+    <h2 class="sect__header">Заинтересованы?</h2>
     <p class="callback__description">Дам бесплатную консультацию по телефону</p>
-    <form action="' . $_SERVER['REQUEST_URI'] . '" method="post">
+    <form action="' . $_SERVER['REQUEST_URI'] . '" method="post" autocomplete="off">
         <div class="callback__fields">
             <p class="callback__paragraph_for_textbox">
                 <input class="callback__textbox" type="text" name="name" placeholder="Имя">
