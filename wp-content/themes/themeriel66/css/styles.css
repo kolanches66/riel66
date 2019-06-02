@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800|PT+Sans&display=swap');
 
 .container {
   margin: 0 auto;
@@ -36,6 +36,35 @@
   line-height: 1.50;
 }
 
+/* Контакты в верху страницы */
+.topcontacts {
+  box-sizing: border-box;
+  padding: 12px 32px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.topcontacts__contact {
+  display: inline-block;
+  margin-right: 32px;
+}
+.topcontacts__contact,
+.topcontacts__link{
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+}
+.topcontacts__link {
+  text-decoration: none;
+}
+.topcontacts__icon,
+.topcontacts__text {
+  display: inline-block;
+}
+
+
+
 /* Картинка и аватар */
 .welcome {
   background-attachment: fixed;
@@ -63,7 +92,7 @@
   font-size: 48px;
   font-weight: 800;
   line-height: 1.0;
-  padding-top: 42px;
+  padding-top: 55px;
 }
 .welcome__work{
   font-size: 32px;
@@ -322,20 +351,21 @@
   }
   .welcome__experience {
     font-size: 32px;
-    padding: 8px 16px 0 0;
-    text-align: right;
+    /*padding: 8px 16px 0 0;*/
+    padding-top: 96px;
+    /*text-align: center;*/
   }
   .welcome__work {
     font-size: 18px;
     line-height: 0.5;
-    padding: 0 16px 0 0;
-    text-align: right;
+    /*padding: 0 16px 0 0;*/
+    /*text-align: right;*/
   }
-  .welcome__slogan {
-    font-size: 12px;
-    padding: 32px 16px 0 0;
-    text-align: right;
-  }
+  /*.welcome__slogan {*/
+  /*  font-size: 12px;*/
+  /*  padding: 32px 16px 0 0;*/
+  /*  text-align: right;*/
+  /*}*/
   .welcome__avatar {
     bottom: -112px;
   }

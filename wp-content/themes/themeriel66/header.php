@@ -29,6 +29,23 @@
 </head>
 
 <body>
+
+<!--<section class="topcontacts">-->
+<!--    <div class="container contacts_container">-->
+<!--        <div class="topcontacts__contact">-->
+<!--            <div class="topcontacts__icon"><i class="fas fa-map-marker-alt"></i></div>-->
+<!--            <div class="topcontacts__text"><a class="topcontacts__link" href="#">г. Екатеринбург</a></div>-->
+<!--        </div>-->
+<!--        <div class="topcontacts__contact">-->
+<!--            <div class="topcontacts__icon"><i class="fas fa-phone"></i></div>-->
+<!--            <div class="topcontacts__text"><a class="topcontacts__link" href="tel:+79028723894">+7 902 87 23 894</a></div>-->
+<!--        </div><div class="topcontacts__contact">-->
+<!--            <div class="topcontacts__icon"><i class="fas fa-envelope"></i></div>-->
+<!--            <div class="topcontacts__text"><a class="topcontacts__link" href="mailto:ponomareva@riel66.ru">ponomareva@riel66.ru</a></div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
 <section class="welcome">
     <div class="welcome__darkness">
         <h1 class="welcome__experience">12 лет</h1>
