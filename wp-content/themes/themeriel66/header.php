@@ -24,8 +24,8 @@
     </script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/normalize.css">
-    <link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/styles.css">
+    <!-- <link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/styles.css"> -->
 </head>
 
 <body>
@@ -38,10 +38,12 @@
         </div>
         <div class="topcontacts__contact">
             <div class="topcontacts__icon"><i class="fas fa-phone"></i></div>
-            <div class="topcontacts__text"><a class="topcontacts__link" href="tel:+79028723894">+7 902 87 23 894</a></div>
+            <div class="topcontacts__text"><a class="topcontacts__link" href="tel:+79028723894"><?= get_option('siteparams')['phone'] ?></a></div>
         </div><div class="topcontacts__contact">
             <div class="topcontacts__icon"><i class="fas fa-envelope"></i></div>
-            <div class="topcontacts__text"><a class="topcontacts__link" href="mailto:ponomareva@riel66.ru">ponomareva@riel66.ru</a></div>
+            <div class="topcontacts__text">
+                <a class="topcontacts__link" href="mailto:<?= get_option('siteparams')['email'] ?>"><?= get_option('siteparams')['email'] ?></a>
+            </div>
         </div>
     </div>
 </section>
