@@ -32,6 +32,44 @@
             </section>
         </div>
 
+        <hr class="container__divider">
+        <div class="container">
+            <section class="sect reviews">
+                <h2 class="sect__header">Отзывы</h2>
+                <div class="owl-carousel owl-theme reviews__carousel">
+                    <div class="item">
+                        <div class="services__card">
+                            <div class="services__card__icon">
+                                <img class="services__card__icon__image" src="http://localhost:8080/wp-content/uploads/2019/08/juridical.svg">
+                            </div>
+                            <div class="services__card__text">
+                                <div class="services__card__header">Юридическое сопровождение сделки</div>
+                                <div class="services__card__description">(дарение, продажа, покупка, обмен)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="services__card">
+                            <div class="services__card__icon">
+                                <img class="services__card__icon__image" src="http://localhost:8080/wp-content/uploads/2019/08/juridical.svg">
+                            </div>
+                            <div class="services__card__text">
+                                <div class="services__card__header">Юридическое сопровождение сделки</div>
+                                <div class="services__card__description">(дарение, продажа, покупка, обмен)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <hr class="container__divider">
+        <div class="container">
+            <section class="sect reviews">
+                <h2 class="sect__header">Сотрудничество с банками</h2>
+            </section>
+        </div>
+
         <!--<hr class="container__divider">
         <div class="container">
             <section class="sect">
@@ -47,19 +85,5 @@
         </div>-->
 
     </main>
-
-<!--	<main role="main">-->
-<!--		<section>-->
-<!---->
-<!--			<h1>--><?php //_e( 'Latest Posts', 'html5blank' ); ?><!--</h1>-->
-<!---->
-<!--			--><?php //get_template_part('loop'); ?>
-<!---->
-<!--			--><?php //get_template_part('pagination'); ?>
-<!---->
-<!--		</section>-->
-<!--	</main>-->
-
-<?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>

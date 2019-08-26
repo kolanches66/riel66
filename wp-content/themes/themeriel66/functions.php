@@ -12,16 +12,23 @@ if (function_exists('add_theme_support')) {
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 }
 
+function load_scripts(){
+    //Load scripts:
+    wp_enqueue_script('jquery'); # Loading the WordPress bundled jQuery version.
+    //may add more scripts to load like jquery-ui
+}
+add_action('wp_enqueue_scripts', 'load_scripts');
+
 function admin_remove_menus(){
-    remove_menu_page('index.php' );                  //Консоль
-    remove_menu_page('edit.php' );                   //Записи
-    remove_menu_page('upload.php' );                 //Медиафайлы
-    remove_menu_page('edit.php?post_type=page' );    //Страницы
-    remove_menu_page('edit-comments.php' );          //Комментарии
+    // remove_menu_page('index.php' );                  //Консоль
+    // remove_menu_page('edit.php' );                   //Записи
+    // remove_menu_page('upload.php' );                 //Медиафайлы
+    // remove_menu_page('edit.php?post_type=page' );    //Страницы
+    // remove_menu_page('edit-comments.php' );          //Комментарии
     // remove_menu_page('themes.php' );                 //Внешний вид
     // remove_menu_page('plugins.php' );                //Плагины
     // remove_menu_page('users.php' );                  //Пользователи
-    remove_menu_page('tools.php' );                  //Инструменты
+    // remove_menu_page('tools.php' );                  //Инструменты
     // remove_menu_page('options-general.php' );        //Настройки
 }
   
@@ -33,13 +40,14 @@ function admin_hide_order_infoblock() {
     </style>';
 }
 
+
 $siteparams_url = 'siteparams.php';
 
-function siteparams() { /* siteparams_addpage */
-    global $siteparams_url;
-    add_menu_page( 'Параметры', 'Параметры', 'manage_options', $siteparams_url, 'siteparams_renderpage');
-}
-add_action('admin_menu', 'siteparams');
+// function siteparams() { /* siteparams_addpage */
+//     global $siteparams_url;
+//     add_menu_page( 'Параметры', 'Параметры', 'manage_options', $siteparams_url, 'siteparams_renderpage');
+// }
+// add_action('admin_menu', 'siteparams');
 
 /**
  * Возвратная функция (Callback)

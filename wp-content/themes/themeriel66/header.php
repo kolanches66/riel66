@@ -13,6 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php bloginfo('description'); ?>">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    
+    <? wp_enqueue_script("jquery"); ?>
+
     <?php wp_head(); ?>
     <script>
         // conditionizr.com
@@ -94,6 +99,5 @@
             </div>
         </div>
     </div>
-<!--    <hr class="header__divider">-->
 </header>
 <body <?php body_class(); ?>>

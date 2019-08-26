@@ -24,6 +24,17 @@
         ga('send', 'pageview');
     </script>
 
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 
 </html>

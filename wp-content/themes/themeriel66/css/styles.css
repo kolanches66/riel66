@@ -344,6 +344,14 @@
   border-bottom: 1px solid rgba(200, 200, 200, 0.75);
 }
 
+.reviews__carousel {
+  padding: 20px 0;
+}
+
+.owl-prev, .owl-next, .owl-dot {
+  outline: none;
+}
+
 /* Адаптивность */
 @media (min-width: 200px) and (max-width: 659px) {
   .sect {
