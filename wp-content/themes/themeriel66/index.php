@@ -14,7 +14,7 @@
             </section>
         </div>
 
-        <hr class="divider">
+        <!--<hr class="divider">-->
         <div class="container">
             <section class="sect services">
                 <h2 class="sect__header">Помогу по вопросам</h2>
@@ -23,18 +23,20 @@
                 </div>
             </section>
 
+            <!--<hr class="divider">-->
+
             <section class="sect sect_callback" id="callback">
                 <div class="cont cont_50per">
-                    <h2 class="sect__header">Заинтересованы?</h2>
-                    <p class="sect__description">Дам бесплатную консультацию по телефону</p>
-                    <div class="callback">
-                        <? get_template_part('templates/callback') ?>
+                    <div class="sect__headercontainer">
+                        <h2 class="sect__header">Заинтересованы?</h2>
+                        <p class="sect__description">Дам бесплатную консультацию по телефону</p>
                     </div>
+                    <? get_template_part('templates/callback') ?>
                 </div>
             </section>
         </div>
 
-        <hr class="divider">
+        <!--<hr class="divider">-->
         <div class="container">
             <section class="sect reviews">
                 <h2 class="sect__header">Отзывы</h2>
@@ -42,7 +44,7 @@
             </section>
         </div>
 
-        <hr class="divider">
+        <!--<hr class="divider">-->
         <div class="container">
             <section class="sect sect_banks">
                 <h2 class="sect__header">Сотрудничество с банками</h2>
@@ -50,27 +52,13 @@
             </section>
         </div>
 
-        <hr class="divider">
+        <!--<hr class="divider">-->
         <div class="container">
             <section class="sect sect_certs">
                 <h2 class="sect__header">Аттестаты</h2>
                 <? get_template_part('templates/certs') ?>
             </section>
         </div>
-
-        <!--<hr class="divider">
-        <div class="container">
-            <section class="sect">
-                <h2 class="services__header">Ипотека</h2>
-            </section>
-        </div>
-
-        <hr class="divider">
-        <div class="container">
-            <section class="sect">
-                <h2 class="services__header">От клиентов</h2>
-            </section>
-        </div>-->
 
     </main>
 

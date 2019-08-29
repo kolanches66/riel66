@@ -15,6 +15,20 @@
 </div>
 
 <script>
+    jQuery(document).ready(function() {
+
+        $('input[name="callback_phone"]').mask("+7 000 000 00 00");
+
+        $('input[name="callback_phone"]').focus(function() {
+            $(this).attr('placeholder', '+7 XXX XXX XX XX');
+        });
+
+        $('input[name="callback_phone"]').blur(function() {
+            $(this).attr('placeholder', 'Телефон');
+        });
+
+    });
+
     jQuery('.callback__buttonsubmit').click(function(e) {
         e.preventDefault();
 

@@ -3,7 +3,6 @@
 @import './fonts.scss';
 @import './normalize.scss';
 
-
 $blue: #4ca6de;
 
 body {
@@ -44,6 +43,7 @@ a {
 .sect {
   box-sizing: border-box;
   margin: 0 auto;
+  margin-top: 2rem;
   width: 960px;
 
   &__header {
@@ -73,7 +73,7 @@ a {
 .divider {
   border: 0;
   border-top: 16px solid rgba(76, 166, 222, 0.1);
-  margin-bottom: 48px;
+  margin-bottom: 1.5rem;
   margin-top: 48px;
   width: 100%;
 }
@@ -148,23 +148,27 @@ a {
   &__list {
     display: flex;
     list-style: none;
-    margin: 20px 0 25px 0;
+    margin: 2rem 0 3rem 0;
     padding: 0;
 
     &item {
 
       &__link {
-        background-color: lighten(#1177dd, 10%);
-        border-radius: 5px;
-        color: #fff;
+        // background-color: lighten(#1177dd, 10%);
+        // border-radius: 5px;
+        border-bottom: 1px solid #ddd;
+        color: #1177dd;
         cursor: pointer;
         display: block;
-        margin-right: 1rem;
-        padding: 0.5rem 1rem;
-        transition: background-color .25s ease;
+        font-size: 1.2em;
+        margin-right: 2rem;
+        padding: 0.5rem 0;
+        transition: all .25s ease;
 
         &:hover {
-          background-color: #1177dd;
+          // background-color: #1177dd;
+          border-bottom: 1px solid #222;
+          color: #222;
         }
 
       }
@@ -183,7 +187,6 @@ a {
 .welcome {
   background-attachment: fixed;
   background-color: #409dd7;
-  // background-image: url('../img/welcome.jpg');
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -265,7 +268,6 @@ a {
   flex-direction: column;
   margin: 1rem 0;
   text-align: center;
-  // width: 100%;
 
   &__description {
     color: #333;
@@ -298,11 +300,6 @@ a {
 
 .callme {
   margin: 2rem 0;
-  // margin: 2rem 0;
-  // align-items: flex-end;
-  // display: flex;
-  // flex-direction: column;
-  // width: 50%;
 
   &__header {
     font-family: 'Open Sans', sans-serif;
@@ -331,11 +328,13 @@ a {
 
 .services__list {
   list-style: none;
+  margin: 0;
+  margin-top: 2rem;
   padding-left: 0;
   width: 100%;
 
   &item {
-    margin-bottom: 16px;
+    margin-bottom: 1.5rem;
   }
 
 }
@@ -352,7 +351,7 @@ a {
   
 .card {
   align-items: center;
-  border: 2px solid #dcdcdc;
+  box-shadow: 0 0 2px #ddd;
   border-radius: 5px;
   box-sizing: border-box;
   display: flex;
@@ -363,7 +362,7 @@ a {
   &_question {  /* === TYPE === */
 
     cursor: pointer;
-    transition: background-color .25s ease, border .25s ease;
+    transition: background-color .25s ease, box-shadow .25s ease;
     
     .card__body {
       display: none;
@@ -372,8 +371,7 @@ a {
     }
 
     &:hover {
-      background-color: lighten($blue, 40%);
-      border: 2px solid darken($blue, 10%);
+      box-shadow: 0 0 20px rgba($blue, 0.5), 0 0 4px $blue;
 
       .card__body {
         // display: block;
@@ -388,8 +386,8 @@ a {
     // background-color: #f7f7f7;
     // box-shadow: 0 0 12px #ddd;
     // border: 0;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 12px #dadada;
+    // border: 1px solid #ddd;
+    box-shadow: 0 0 20px #f1f1f1, 0 0 2px #aaa;
     // margin: 1rem;
     min-height: 15rem;
     padding: 60px;
@@ -470,6 +468,7 @@ a {
   }
 
   &__image {
+    cursor: zoom-in;
     width: 12rem;
   }
 
@@ -479,6 +478,12 @@ a {
 .sect_callback {
   display: flex;
   justify-content: center;
+  margin-bottom: 4rem;
+
+  .sect__headercontainer {
+    margin-bottom: 2rem;
+  }
+
 }
 
 .callback {
@@ -510,7 +515,7 @@ a {
   }
 
   &__textbox {
-    border: 2px solid #101010;
+    border: 1px solid #ddd;
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
@@ -521,7 +526,7 @@ a {
     width: 100%;
 
     &::placeholder {
-      color: #aaa;
+      color: #888;
       transition: color .25s ease;
     }
 
@@ -637,7 +642,7 @@ a {
 }
 
 .reviews__carousel {
-  padding: 20px 0;
+  padding: 1rem 0;
 }
 
 .owl-carousel {
@@ -811,16 +816,16 @@ and (max-width: 540px) {
 
   .services__listitem {
     
-    margin: 0;
+    // margin: 0;
 
     .card_question {
       border: none;
       border-radius: 0;
-      border-top: 2px solid #dcdcdc;
+      // border-top: 2px solid #dcdcdc;
 
       &:hover {
         background-color: #f8fcfe;
-        border-top: 2px solid #268fd1;
+        // border-top: 2px solid #268fd1;
       }
 
     }
@@ -910,8 +915,8 @@ and (max-width: 1060px) {
 and (min-width: 1061px) {
 
   .divider {
-    border-radius: 5px;
-    width: 25rem;
+    // border-radius: 5px;
+    // width: 25rem;
   }
 
   // .sect_contacts {
