@@ -13,9 +13,7 @@ if (function_exists('add_theme_support')) {
 }
 
 function load_scripts(){
-    //Load scripts:
-    wp_enqueue_script('jquery'); # Loading the WordPress bundled jQuery version.
-    //may add more scripts to load like jquery-ui
+    wp_enqueue_script('jquery');
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
 
@@ -239,7 +237,7 @@ function certs__register_post_type() {
 }
 
 function register_styles() {
-    wp_register_style('riel66', get_template_directory_uri() . '/css/styles.css', array(), '1.0', 'all');
+    wp_register_style('riel66', get_template_directory_uri() . '/css/styles.css?v1', array(), '1.0', 'all');
     wp_enqueue_style('riel66');
 }
 
