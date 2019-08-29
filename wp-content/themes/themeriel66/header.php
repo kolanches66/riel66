@@ -48,7 +48,7 @@
     <div class="cont cont_welcome">
         <div class="welcome__container">
             <div class="welcome__avatar">
-                <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/img/ponomareva_marina.png" alt="">
+                <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/img/ponomareva_marina.png?v1" alt="">
             </div>
             <div class="welcome__slogan">
                 <h1 class="welcome__slogan__experience">12 лет</h1>
