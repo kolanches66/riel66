@@ -33,6 +33,38 @@
 	</div>
 </div>
 
+<div class="whoami">
+    <div class="whoami__description">Агент по недвижимости</div>
+    <div class="whoami__name">
+        <a class="whoami__name__link" href="/">Пономарева<br>Марина</a>
+    </div>
+</div>
+
+<div class="callme">
+        <div class="callme__icons">
+            <div class="callme__icon">
+                <a href="tel:+79028723894" class="callme__icon__link">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            <div class="callme__icon">
+                <a href="mailto:ponomarev@riel66.ru" class="callme__icon__link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="callme__icon">
+                <a class="callme__icon__link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <div class="callme__icon">
+                <a href="https://wa.me/79028723894" class="callme__icon__link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
 <header class="welcome" style="background-image: url('<?=get_template_directory_uri();?>/img/welcome3.jpg');">
     <!-- <div class="cont cont_topcontacts">
         <div class="topcontacts__contact icon icon_location">
@@ -73,37 +105,7 @@
     </ul>
 </nav>
 
-<section class="sect sect_contacts">
-    <div class="whoami">
-        <div class="whoami__description">Агент по недвижимости</div>
-        <div class="whoami__name">
-            <a class="whoami__name__link" href="/">Пономарева<br>Марина</a>
-        </div>
-    </div>
-    <div class="callme">
-        <div class="callme__header">Свяжитесь со мной:</div>
-        <div class="callme__icons">
-            <div class="callme__icon">
-                <a href="tel:+79028723894" class="callme__icon__link">
-                    <i class="fas fa-phone"></i>
-                </a>
-            </div>
-            <div class="callme__icon">
-                <a href="mailto:ponomarev@riel66.ru" class="callme__icon__link">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-            <div class="callme__icon">
-                <a class="callme__icon__link">
-                    <i class="fab fa-telegram"></i>
-                </a>
-            </div>
-            <div class="callme__icon">
-                <a href="https://wa.me/79028723894" class="callme__icon__link">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- <section class="sect sect_contacts">
+    
+</section> -->
 <body <?php body_class(); ?>>
