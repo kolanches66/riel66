@@ -3,7 +3,8 @@
 <main>
     <div class="container">
         <section class="sect sect_page">
-            <h1><?php the_title(); ?></h1>
+            <h2 class="sect__header"><?php the_title(); ?></h2>
+            <!-- <h1><?php the_title(); ?></h1> -->
                 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <?php the_content(); ?>
