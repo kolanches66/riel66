@@ -44,7 +44,7 @@
 
         <hr class="divider">
         <div class="container">
-            <section class="sect reviews">
+            <section class="sect sect_banks">
                 <h2 class="sect__header">Сотрудничество с банками</h2>
                 <? get_template_part('templates/banks') ?>
             </section>

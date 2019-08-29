@@ -681,8 +681,12 @@ a {
 @media only screen
 and (max-width: 540px) {
 
+  body {
+    font-size: 14px;
+  }
+
   .welcome__slogan {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .cont_topcontacts {
@@ -692,6 +696,106 @@ and (max-width: 540px) {
 
   .topcontacts__contact {
       margin-bottom: 10px;
+  }
+
+  .sect.menu {
+    padding: 0 1rem;
+  }
+
+  .sect_aboutme {
+
+    .sect__content {
+      padding: 0 1rem;
+    }
+
+  }
+
+  .sect.reviews {
+
+    .sect__header {
+      padding: 0 1rem;
+    }
+
+    .card_review {
+      padding: 1em 1.5em;
+
+      .card__body {
+        padding-right: 0;
+      }
+
+    }
+
+    .owl-carousel .owl-nav {
+
+      button.owl-prev, button.owl-next {
+        display: none;
+      }
+
+    }
+
+  }
+
+  .services__listitem {
+    
+    margin: 0;
+
+    .card_question {
+      border: none;
+      border-radius: 0;
+      border-top: 2px solid #dcdcdc;
+
+      &:hover {
+        background-color: #f8fcfe;
+        border-top: 2px solid #268fd1;
+      }
+
+    }
+
+  }
+  
+  .sect__header {
+    padding: 0 1.5rem;
+    text-align: center;
+  }
+
+  .sect.sect_banks {
+
+    .bankcards {
+      align-items: center;
+      flex-direction: column;
+
+      .bankcard {
+        margin: 0;
+        margin-bottom: 1.5rem;
+
+        .bankcard__title {
+          margin: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  .sect_certs {
+
+    .sect__header {
+      padding: 0 1.5rem;
+      text-align: center;
+    }    
+
+    .certs {
+      align-items: center;
+      flex-direction: column;
+
+      .cert {
+        margin: 0;
+        margin-bottom: 1.5rem;
+      }
+
+    }
+
   }
 
 }
@@ -741,6 +845,16 @@ and (max-width: 768px) {
 }
 
 @media only screen
+and (min-width: 541px)
+and (max-width: 1060px) {
+  
+  .sect {
+    padding: 0 30px;
+  }
+
+}
+
+@media only screen
 and (max-width: 1060px) {
 
   .cont_welcome {
@@ -748,7 +862,6 @@ and (max-width: 1060px) {
   }
 
   .sect {
-    padding: 0 30px;
     width: 100%;
   }
 
