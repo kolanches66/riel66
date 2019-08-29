@@ -20,15 +20,15 @@ function load_scripts(){
 add_action('wp_enqueue_scripts', 'load_scripts');
 
 function admin_remove_menus(){
-    // remove_menu_page('index.php' );                  //Консоль
-    // remove_menu_page('edit.php' );                   //Записи
-    // remove_menu_page('upload.php' );                 //Медиафайлы
+    remove_menu_page('index.php' );                  //Консоль
+    remove_menu_page('edit.php' );                   //Записи
+    remove_menu_page('upload.php' );                 //Медиафайлы
     // remove_menu_page('edit.php?post_type=page' );    //Страницы
-    // remove_menu_page('edit-comments.php' );          //Комментарии
-    // remove_menu_page('themes.php' );                 //Внешний вид
-    // remove_menu_page('plugins.php' );                //Плагины
-    // remove_menu_page('users.php' );                  //Пользователи
-    // remove_menu_page('tools.php' );                  //Инструменты
+    remove_menu_page('edit-comments.php' );          //Комментарии
+    remove_menu_page('themes.php' );                 //Внешний вид
+    remove_menu_page('plugins.php' );                //Плагины
+    remove_menu_page('users.php' );                  //Пользователи
+    remove_menu_page('tools.php' );                  //Инструменты
     // remove_menu_page('options-general.php' );        //Настройки
 }
   
@@ -43,11 +43,11 @@ function admin_hide_order_infoblock() {
 
 $siteparams_url = 'siteparams.php';
 
-// function siteparams() { /* siteparams_addpage */
-//     global $siteparams_url;
-//     add_menu_page( 'Параметры', 'Параметры', 'manage_options', $siteparams_url, 'siteparams_renderpage');
-// }
-// add_action('admin_menu', 'siteparams');
+function siteparams() { /* siteparams_addpage */
+    global $siteparams_url;
+    add_menu_page( 'Параметры', 'Параметры', 'manage_options', $siteparams_url, 'siteparams_renderpage');
+}
+add_action('admin_menu', 'siteparams');
 
 /**
  * Возвратная функция (Callback)
@@ -208,15 +208,37 @@ return array(
     );
 }
 
-function questions__register_post_type() {  /* Выполненные работы */
+function questions__register_post_type() {
     $labels = labels_for_post_type('Помогу по вопросам');
     $args = args_for_post_type($labels, 1, array('title'));
     register_post_type('questions', $args);
 }
 
+function banks__register_post_type() { 
+    $labels = labels_for_post_type('Сотрудничество с банками');
+    $args = args_for_post_type($labels, 1, array('title'));
+    register_post_type('banks', $args);
+}
+
+function reviews__register_post_type() { 
+    $labels = labels_for_post_type('Отзывы');
+    $args = args_for_post_type($labels, 1, array('title'));
+    register_post_type('reviews', $args);
+}
+
+function articles__register_post_type() { 
+    $labels = labels_for_post_type('Статьи');
+    $args = args_for_post_type($labels, 1, array('title'));
+    register_post_type('articles', $args);
+}
+
+function certs__register_post_type() { 
+    $labels = labels_for_post_type('Сертификаты');
+    $args = args_for_post_type($labels, 1, array('title'));
+    register_post_type('certs', $args);
+}
+
 function register_styles() {
-    wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '1.0', 'all');
-    wp_enqueue_style('normalize');
     wp_register_style('riel66', get_template_directory_uri() . '/css/styles.css', array(), '1.0', 'all');
     wp_enqueue_style('riel66');
 }
@@ -230,6 +252,10 @@ add_action('admin_head', 'admin_hide_order_infoblock');
 
 add_action('wp_enqueue_scripts', 'register_styles');
 add_action('init', 'questions__register_post_type' );
+add_action('init', 'banks__register_post_type' );
+add_action('init', 'reviews__register_post_type' );
+add_action('init', 'articles__register_post_type' );
+add_action('init', 'certs__register_post_type' );
 
 add_filter('the_content', 'filter_paragraphs');
 

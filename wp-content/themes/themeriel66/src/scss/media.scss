@@ -1,0 +1,164 @@
+@media (min-width: 200px) and (max-width: 659px) {
+
+    .sect {
+      box-sizing: border-box;
+      padding: 0 24px;
+      width: 100%;
+    }
+    .cont_topcontacts {
+        align-items: center;
+        flex-direction: column;
+    }
+    .topcontacts__contact {
+        margin-bottom: 10px;
+    }
+    .welcome__slogan {
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    .sect_welcome {
+      background-size: 150%;
+      width: 100%;
+    }
+    .welcome__experience {
+      font-size: 48px;
+      padding-top: 96px;
+    }
+    .welcome__work {
+      font-size: 32px;
+      line-height: 1.1;
+    }
+    .welcome__avatar__image {
+      height: 196px;
+    }
+    .header {
+      margin-top: 80px;
+    }
+    .callback {
+      margin-top: 48px;
+    }
+    .callback__content {
+      padding: 0;
+    }
+    .header__contacts__callme {
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .header__contacts__icons {
+      text-align: center;
+    }
+    .header__contacts__icons__icon:first-of-type {
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 660px) and (max-width: 800px) {
+
+    .sect {
+      box-sizing: border-box;
+      padding: 0 32px;
+      width: 100%;
+    }
+
+    .sect_welcome {
+      background-size: 150%;
+      width: 100%;
+    }
+
+    .welcome__avatar__image {
+      height: 196px;
+    }
+
+    .header__contacts__callme,
+    .header__contacts__icons{
+      text-align: right;
+    }
+
+    .header__contacts__icons__icon:last-child {
+      margin-right: 0;
+    }
+
+    .callback {
+      margin-top: 48px;
+    }
+    
+  }
+  
+  @media (min-width: 801px) and (max-width: 1059px) {
+    .container__divider {
+      border-radius: 5px;
+      width: 320px;
+    }
+    .sect {
+      box-sizing: border-box;
+      padding: 0 32px;
+      width: 100%;
+    }
+    .sect_welcome {
+      background-size: 125%;
+      width: 100%;
+    }
+    // .welcome__avatar {
+    //   bottom: -128px;
+    // }
+    .welcome__avatar__image {
+      height: 256px;
+    }
+    .header__contacts__callme,
+    .header__contacts__icons{
+      text-align: right;
+    }
+    .header__contacts__icons__icon:last-child {
+      margin-right: 0;
+    }
+    .callback {
+      margin-top: 48px;
+      width: 500px;
+    }
+  }
+  
+  @media (min-width: 1060px) {
+    .container {
+      padding: 0;
+      width: 960px;
+    }
+    .container__divider {
+      border-radius: 5px;
+      width: 320px;
+    }
+    .sect {
+        margin: 0 auto;
+        width: 960px;
+    }
+
+    .cont_welcome {
+        margin: 0 auto;
+        width: 960px;
+    }
+
+    .sect_welcome {
+      background-size: 150%;
+      background-position-y: center;
+      width: 100%;
+    }
+
+    .sect_contacts {
+        margin: 40px auto;
+    }
+    
+    .services {
+      float: left;
+      padding: 0 32px 0 0;
+      width: 560px;
+    }
+    .callback {
+      float: right;
+      padding: 0 0 0 32px;
+      width: 400px;
+    }
+    .callback__content {
+      padding: 0;
+    }
+  }
+  

@@ -31,10 +31,24 @@
                 margin: 10,
                 nav: true,
                 items: 1,
+                dots: false,
+                navText : ['', '']
             });
+
+            jQuery('.js-popup-callback-hide').click(function() {
+                jQuery('.js-popup-callback').hide();
+            });
+            jQuery('.js-popup-callback-show').click(function() {
+                jQuery('.js-popup-callback').show();
+            });
+
         });
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script id="__bs_script__">//<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+    //]]></script>
 </body>
 
 </html>
