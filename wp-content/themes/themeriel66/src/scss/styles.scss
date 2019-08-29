@@ -343,6 +343,11 @@ a {
 .reviews__carousel.owl-carousel .owl-stage {
   display: flex;
   align-items: center;
+
+  .item {
+    margin: 1rem;
+  }
+
 }
   
 .card {
@@ -380,8 +385,12 @@ a {
   }
 
   &_review {  /* === TYPE ==== */
-    background-color: #f7f7f7;
-    border: 0;
+    // background-color: #f7f7f7;
+    // box-shadow: 0 0 12px #ddd;
+    // border: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px #dadada;
+    // margin: 1rem;
     min-height: 15rem;
     padding: 60px;
   }
@@ -397,7 +406,7 @@ a {
 
   &__body {
     font-size: 1em;
-    line-height: 1.5;
+    line-height: 1.75;
     padding-right: 40px;
 
     > p {
@@ -408,9 +417,10 @@ a {
   }
 
   &__author {
-    color: #999;
-    font-size: 0.9em;
-    margin-top: 10px;
+    color: #101010;
+    font-size: 1.25em;
+    font-weight: 800;
+    margin-bottom: 1rem;
   }
 
   &__description {
@@ -664,7 +674,7 @@ a {
     }
 
     button.owl-prev {
-      left: calc(0% - 2rem);
+      left: calc(0% - 1rem);
 
       &:after {
         color: #fff;
@@ -676,7 +686,7 @@ a {
     }
 
     button.owl-next {
-      right: calc(0% - 2rem);
+      right: calc(0% - 1rem);
 
       &:after {
         color: #fff;
@@ -770,8 +780,18 @@ and (max-width: 540px) {
       padding: 0 1rem;
     }
 
+    .reviews__carousel.owl-carousel .owl-stage {
+
+      .item {
+        margin: 1rem 0;
+      }
+    
+    }
+
     .card_review {
-      padding: 1em 1.5em;
+      border: 0;
+      border-radius: 0;
+      padding: 2em 1.5em;
 
       .card__body {
         padding-right: 0;

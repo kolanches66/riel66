@@ -16,8 +16,8 @@
                 <div class="card__icon icon_user"></div>
             </div> -->
             <div class="card__text">
-                <div class="card__body"><? the_field('content'); ?></div>
                 <div class="card__author"><? the_title(); ?></div>
+                <div class="card__body"><? the_field('content'); ?></div>
             </div>
         </div>
     </div>
