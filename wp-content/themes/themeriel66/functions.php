@@ -261,18 +261,32 @@ function certs__register_post_type() {
 }
 
 function register_styles() {
-    wp_register_style('riel66', get_template_directory_uri() . '/css/styles.css?v1', array(), '1.0', 'all');
+    wp_register_style('riel66', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0', 'all');
     wp_enqueue_style('riel66');
 }
+
+function register_scripts() {
+    wp_deregister_script( 'jquery' );
+    wp_register_script( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js');
+    wp_enqueue_script( 'jquery' );
+
+    wp_enqueue_script ( 'bundle.js', get_template_directory_uri() . '/assets/js/bundle.js', array(), '', true);
+    wp_enqueue_script( 'fancybox', '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', array( 'jquery' ));
+    wp_enqueue_script( 'jquery.mask.js', '//cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js', array( 'jquery' ));
+}    
 
 function filter_paragraphs($content){
     return preg_replace('/<p([^>]+)?>/', '<p$1 class="sect__content__paragraph">', $content);
 }
 
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+
 add_action('admin_menu', 'admin_remove_menus');
 add_action('admin_head', 'admin_hide_order_infoblock');
 
 add_action('wp_enqueue_scripts', 'register_styles');
+add_action('wp_enqueue_scripts', 'register_scripts' );
+
 add_action('init', 'questions__register_post_type' );
 add_action('init', 'banks__register_post_type' );
 add_action('init', 'reviews__register_post_type' );

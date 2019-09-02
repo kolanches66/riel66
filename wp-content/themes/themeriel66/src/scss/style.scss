@@ -3,11 +3,14 @@
 @import './fonts.scss';
 @import './normalize.scss';
 
-$blue: #4ca6de;
-$denim: #1177dd;
 $lightgray: #ddd; 
+$gray: #888;
 $darkgray: #222;;
 $white: #fff;
+$blue: #4ca6de;
+$denim: #1177dd;
+$red: #D7595F;
+$green: #AAD661;
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -84,16 +87,16 @@ a {
 
 .icon {
 
-  &_user {
-    background-image: url('../img/icons/user.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: $white 20px solid;
-    border-radius: 50%;
-    height: 8rem;
-    margin: 0 40px;
-    width: 8rem;
-  }
+  // &_user {
+  //   background-image: url('../../assets/img/icons/user.png');
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   border: $white 20px solid;
+  //   border-radius: 50%;
+  //   height: 8rem;
+  //   margin: 0 40px;
+  //   width: 8rem;
+  // }
 
   &:before {
     font-family: 'Font Awesome 5 Free';
@@ -526,8 +529,6 @@ a {
   &__textbox {
     border: 1px solid $lightgray;
     box-sizing: border-box;
-    font-family: "PT Sans", sans-serif;
-    font-size: 1em;
     height: 38px;
     outline: none;
     text-align: center;
@@ -535,21 +536,95 @@ a {
     width: 100%;
 
     &::placeholder {
-      color: #888;
-      transition: color .25s ease;
+        color: $gray;
+        transition: color .25s ease;
     }
 
     &:focus {
-      border: 2px solid #4ca6de;
-      box-shadow: 0 0 10px lighten($blue, 25%);
+        border: 2px solid $blue;
+        box-shadow: 0 0 10px lighten($blue, 25%);
 
-      &::placeholder {
-        color: $lightgray;
-      }
-
+        &::placeholder {
+            color: $lightgray;
+        }
+    
     }
 
-  }
+    &_error {
+        border: 2px solid $red;
+
+        &::placeholder {
+            color: $red;
+        }
+    }
+
+    &_correct {
+        border: 2px solid $green;
+        color: $green;
+
+        &:focus {
+            border: 2px solid $green;
+            box-shadow: 0 0 10px lighten($green, 25%);
+        }  
+    }
+
+}
+
+&__error-field {
+    animation-duration: 0.4s;
+    animation-name: fadeIn;
+    background-color: #D7595F;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0;
+    position: relative;
+    text-align: center;
+    transition: all .25s ease;
+
+    &:after {
+        background-color: #D7595F;
+        content: '';
+        display: block;
+        height: 1rem;
+        position: absolute;
+        width: 1rem;
+        left: calc(50% - 0.5rem);
+        top: -0.25rem;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+
+}
+
+  // &__textbox {
+  //   border: 1px solid $lightgray;
+  //   box-sizing: border-box;
+  //   font-family: "PT Sans", sans-serif;
+  //   font-size: 1em;
+  //   height: 38px;
+  //   outline: none;
+  //   text-align: center;
+  //   transition: border .25s ease, box-shadow .25s ease;
+  //   width: 100%;
+
+  //   &::placeholder {
+  //     color: #888;
+  //     transition: color .25s ease;
+  //   }
+
+  //   &:focus {
+  //     border: 2px solid #4ca6de;
+  //     box-shadow: 0 0 10px lighten($blue, 25%);
+
+  //     &::placeholder {
+  //       color: $lightgray;
+  //     }
+
+  //   }
+
+  // }
 
   &__buttonsubmit {
     background-color: $blue;
@@ -701,6 +776,10 @@ and (max-width: 768px) {
     height: 10rem;
   }
 
+  .welcome__slogan {
+    font-size: 12px;
+  }
+
   .sect_contacts {
     display: flex;
     flex-direction: column;
@@ -731,7 +810,7 @@ and (max-width: 540px) {
   }
 
   .welcome__slogan {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .cont_topcontacts {

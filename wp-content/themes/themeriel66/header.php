@@ -15,15 +15,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
-
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     
-    <? wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
@@ -71,26 +66,19 @@
         </div>
     </div>
 
-<header class="welcome" style="background-image: url('<?=get_template_directory_uri();?>/img/welcome3.jpg');">
-    <!-- <div class="cont cont_topcontacts">
-        <div class="topcontacts__contact icon icon_location">
-            <a class="topcontacts__link" href="#">г. Екатеринбург</a>
-        </div>
-        <div class="topcontacts__contact icon icon_phone">
-            <a class="topcontacts__link" href="tel:+79028723894"><?= get_option('siteparams')['phone'] ?></a>
-        </div>
-        <div class="topcontacts__contact icon icon_email">
-        <a class="topcontacts__link" href="mailto:<?= get_option('siteparams')['email'] ?>"><?= get_option('siteparams')['email'] ?></a>
-        </div>
-    </div> -->
+<header class="welcome" style="background-image: url('<?=get_template_directory_uri();?>/assets/img/header-bg.jpg');">
     <div class="cont cont_welcome">
         <div class="welcome__container">
             <div class="welcome__avatar">
-                <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/img/ponomareva_marina.png?v1" alt="">
+                <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/assets/img/header-photo.png" alt="">
             </div>
             <div class="welcome__slogan">
-                <h1 class="welcome__slogan__experience">12 лет</h1>
-                <h2 class="welcome__slogan__work">работы в недвижимости</h2>
+                <h1 class="welcome__slogan__experience">1000</h1>
+                <h2 class="welcome__slogan__work">довольных клиентов</h2>
+            </div>
+            <div class="welcome__slogan">
+                <h1 class="welcome__slogan__experience">12</h1>
+                <h2 class="welcome__slogan__work">лет в недвижимости</h2>
             </div>
         </div>
     </div>

@@ -1,0 +1,14 @@
+{
+
+  "name": {
+    "required": true,
+    "minLength": 2,
+    "maxLength": 32
+  },
+
+  "phone": {
+    "required": true,
+    "mask": "/\\+79\\d{9}/"
+  }
+
+}
