@@ -106,9 +106,10 @@
         <? 
         } 
         ?>
-        <!-- <li class="menu__listitem"><a class="menu__listitem__link" href="/?page_id=40">Ипотека</a>
-        <li class="menu__listitem"><a class="menu__listitem__link" href="/?page_id=40">Сотрудничество</a> -->
     </ul>
+    <div class="menu__phonecontainer">
+        <a class="menu__phone icon icon_phone">+7 902 503 23 11</a>
+    </div>
 </nav>
 
 <!-- <section class="sect sect_contacts">
