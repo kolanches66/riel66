@@ -323,6 +323,7 @@ template {
   display: none; }
 
 body {
+  background-color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.25; }
@@ -456,26 +457,9 @@ a {
   font-size: 1em;
   text-shadow: 0px 0px 4px #222; }
 
-.menu {
+.sect_menu {
   display: flex; }
-  .menu__list {
-    display: flex;
-    list-style: none;
-    margin: 2rem 0 3rem 0;
-    padding: 0; }
-    .menu__listitem__link {
-      border-bottom: 1px solid #ddd;
-      color: #1177dd;
-      cursor: pointer;
-      display: block;
-      font-size: 1.2em;
-      margin-right: 2rem;
-      padding: 0.5rem 0;
-      transition: all .25s ease; }
-      .menu__listitem__link:hover {
-        border-bottom: 1px solid #222;
-        color: #222; }
-  .menu__phonecontainer {
+  .sect_menu__phonecontainer {
     cursor: pointer;
     display: flex;
     font-size: 1em;
@@ -483,13 +467,31 @@ a {
     margin: 2rem 0 3rem 0;
     transition: all .25s ease;
     width: 100%; }
-  .menu__phone {
+  .sect_menu__phone {
     align-self: center;
     box-sizing: border-box;
     background-color: #1177dd;
     border-radius: 5px;
     color: #fff;
     padding: 0.5em 1.25em; }
+
+.menu-main-container .menu {
+  display: flex;
+  list-style: none;
+  margin: 2rem 0 3rem 0;
+  padding: 0; }
+  .menu-main-container .menu .menu-item a {
+    border-bottom: 1px solid #ddd;
+    color: #1177dd;
+    cursor: pointer;
+    display: block;
+    font-size: 1.2em;
+    margin-right: 2rem;
+    padding: 0.5rem 0;
+    transition: all .25s ease; }
+    .menu-main-container .menu .menu-item a:hover {
+      border-bottom: 1px solid #222;
+      color: #222; }
 
 .cont_welcome {
   margin: 0 auto;
@@ -683,7 +685,8 @@ a {
 .sect_callback {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  padding: 0 1rem; }
   .sect_callback .sect__headercontainer {
     margin-bottom: 2rem; }
 
@@ -705,6 +708,14 @@ a {
 .callback__fields__line {
   margin-bottom: 1em;
   margin-top: 1em; }
+
+.callback__policy {
+  color: #888;
+  font-size: 0.75em;
+  padding: 0 2em;
+  text-align: center; }
+  .callback__policy a {
+    color: inherit; }
 
 .callback__textbox {
   border: 1px solid #ddd;
@@ -782,8 +793,16 @@ a {
   .sect_page h2 {
     font-size: 1.25em;
     margin-top: 2rem; }
+  .sect_page h5 {
+    font-size: 1.1em;
+    margin: 0;
+    margin-top: 3em; }
   .sect_page p {
     line-height: 1.75; }
+  .sect_page ol {
+    line-height: 1.75; }
+    .sect_page ol li {
+      margin-bottom: 1em; }
 
 /* Футер */
 .footer {
@@ -855,6 +874,8 @@ a {
     font-weight: 900; }
 
 @media only screen and (max-width: 768px) {
+  .cont_50p {
+    width: auto; }
   .welcome__avatar__image {
     height: 10rem; }
   .welcome__slogan {
@@ -881,9 +902,9 @@ a {
     flex-direction: column; }
   .topcontacts__contact {
     margin-bottom: 10px; }
-  .sect.menu {
+  .sect_menu {
     padding: 0 1rem; }
-    .sect.menu .menu__phonecontainer {
+    .sect_menu .menu__phonecontainer {
       display: none; }
   .sect_aboutme .sect__content {
     padding: 0 1rem; }

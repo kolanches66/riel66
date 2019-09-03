@@ -16,6 +16,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55165312, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/55165312" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
     
     <?php wp_head(); ?>
     
@@ -84,8 +100,8 @@
     </div>
 </header>
 
-<nav class="sect menu">
-    <ul class="menu__list">
+<nav class="sect sect_menu">
+    <!-- <ul class="menu__list">
         <li class="menu__listitem"><a class="menu__listitem__link" href="/">Главная</a>
         <?
         $pages = get_pages(); 
@@ -94,9 +110,10 @@
         <? 
         } 
         ?>
-    </ul>
-    <div class="menu__phonecontainer">
-        <a class="menu__phone icon icon_phone">+7 902 503 23 11</a>
+    </ul> -->
+    <? wp_nav_menu(); ?>
+    <div class="sect_menu__phonecontainer">
+        <a class="sect_menu__phone icon icon_phone">+7 902 503 23 11</a>
     </div>
 </nav>
 

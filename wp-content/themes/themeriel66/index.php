@@ -26,7 +26,7 @@
             <!--<hr class="divider">-->
 
             <section class="sect sect_callback" id="callback">
-                <div class="cont cont_50per">
+                <div class="cont cont_50p">
                     <div class="sect__headercontainer">
                         <h2 class="sect__header">Заинтересованы?</h2>
                         <p class="sect__description">Дам бесплатную консультацию по телефону</p>

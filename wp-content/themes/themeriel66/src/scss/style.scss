@@ -13,6 +13,7 @@ $red: #D7595F;
 $green: #AAD661;
 
 body {
+  background-color: $white;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -150,37 +151,8 @@ a {
 
 }
 
-.menu {
+.sect_menu {
   display: flex;
-  
-  &__list {
-    display: flex;
-    list-style: none;
-    margin: 2rem 0 3rem 0;
-    padding: 0;
-
-    &item {
-
-      &__link {
-        border-bottom: 1px solid $lightgray;
-        color: $denim;
-        cursor: pointer;
-        display: block;
-        font-size: 1.2em;
-        margin-right: 2rem;
-        padding: 0.5rem 0;
-        transition: all .25s ease;
-
-        &:hover {
-          border-bottom: 1px solid $darkgray;
-          color: $darkgray;
-        }
-
-      }
-
-    }
-
-  }
 
   &__phonecontainer {
     cursor: pointer;
@@ -199,6 +171,39 @@ a {
     border-radius: 5px;
     color: $white;
     padding: 0.5em 1.25em; 
+  }
+
+}
+
+.menu-main-container {
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 2rem 0 3rem 0;
+    padding: 0;
+
+    .menu-item {
+
+      a {
+        border-bottom: 1px solid $lightgray;
+        color: $denim;
+        cursor: pointer;
+        display: block;
+        font-size: 1.2em;
+        margin-right: 2rem;
+        padding: 0.5rem 0;
+        transition: all .25s ease;
+
+        &:hover {
+          border-bottom: 1px solid $darkgray;
+          color: $darkgray;
+        }
+
+      }
+
+    }
+
   }
 
 }
@@ -491,6 +496,7 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 4rem;
+  padding: 0 1rem;
 
   .sect__headercontainer {
     margin-bottom: 2rem;
@@ -524,6 +530,17 @@ a {
       margin-top: 1em;
     }
 
+  }
+
+  &__policy {
+    color: #888;
+    font-size: 0.75em;
+    padding: 0 2em;
+    text-align: center;
+
+    a {
+      color: inherit;
+    }
   }
 
   &__textbox {
@@ -665,8 +682,23 @@ a {
     margin-top: 2rem;
   }
 
+  h5 {
+    font-size: 1.1em;
+    margin: 0;
+    margin-top: 3em;
+  }
+
   p {
     line-height: 1.75;
+  }
+
+  ol {
+    line-height: 1.75;
+
+    li {
+      margin-bottom: 1em;
+    }
+
   }
 
 }
@@ -772,6 +804,10 @@ a {
 @media only screen
 and (max-width: 768px) {
 
+  .cont_50p {
+    width: auto;
+  }
+
   .welcome__avatar__image {
     height: 10rem;
   }
@@ -822,7 +858,7 @@ and (max-width: 540px) {
       margin-bottom: 10px;
   }
 
-  .sect.menu {
+  .sect_menu {
     padding: 0 1rem;
 
     .menu__phonecontainer {
