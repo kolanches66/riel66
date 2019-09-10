@@ -58,7 +58,8 @@
     </div>
 
     <div class="sect_menu__phonecontainer">
-        <a class="sect_menu__phone icon icon_phone">+7 902 503 23 11</a>
+        <a href="tel:+79028723894" class="sect_menu__phone icon icon_phone">+7 902 503 23 11</a>
+        <a href="mailto:ponomareva@riel66.ru" class="sect_menu__phone icon icon_email">ponomareva@riel66.ru</a>
     </div>
 
     <!-- <div class="callme">
