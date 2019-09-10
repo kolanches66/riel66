@@ -93,13 +93,15 @@
                 <div class="welcome__avatar">
                     <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/assets/img/header-photo.png" alt="">
                 </div>
-                <div class="welcome__slogan">
-                    <h1 class="welcome__slogan__experience">1000</h1>
-                    <h2 class="welcome__slogan__work">довольных клиентов</h2>
-                </div>
-                <div class="welcome__slogan">
-                    <h1 class="welcome__slogan__experience">12</h1>
-                    <h2 class="welcome__slogan__work">лет в недвижимости</h2>
+                <div class="welcome__slogans">
+                    <div class="welcome__slogan">
+                        <h1 class="welcome__slogan__experience">1000</h1>
+                        <h2 class="welcome__slogan__work">довольных клиентов</h2>
+                    </div>
+                    <div class="welcome__slogan">
+                        <h1 class="welcome__slogan__experience">12</h1>
+                        <h2 class="welcome__slogan__work">лет в недвижимости</h2>
+                    </div>
                 </div>
             </div>
         </div>
