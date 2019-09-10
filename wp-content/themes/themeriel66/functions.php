@@ -261,7 +261,7 @@ function certs__register_post_type() {
 }
 
 function register_styles() {
-    wp_register_style('riel66', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0', 'all');
+    wp_register_style('riel66', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.01', 'all');
     wp_enqueue_style('riel66');
 }
 
