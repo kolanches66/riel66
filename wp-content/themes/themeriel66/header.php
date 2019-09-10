@@ -38,26 +38,30 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
-<div class="overlay_popup js-popup-callback _hide">
-	<div class="popup">
-		<a class="popup__close js-popup-callback-hide">&times;</a>
-		<div class="popup__content">
-            <h2 class="popup__content__title">Приватизация</h2>
-            <div class="popup__content__body">Приватизация — форма преобразования собственности, представляющая собой процесс передачи-продажи (полной или частичной) государственной (муниципальной) собственности в частные руки. В приватизации участвуют минимум две стороны, и обязательно одна из сторон — организация — даже такая, как государство.</div>
-		</div>
-	</div>
-</div>
-
-<div class="whoami">
-    <div class="whoami__description">Агент по недвижимости</div>
-    <div class="whoami__name">
-        <a class="whoami__name__link" href="/">Пономарева<br>Марина</a>
+    <div class="overlay_popup js-popup-callback _hide">
+        <div class="popup">
+            <a class="popup__close js-popup-callback-hide">&times;</a>
+            <div class="popup__content">
+                <h2 class="popup__content__title">Приватизация</h2>
+                <div class="popup__content__body">Приватизация — форма преобразования собственности, представляющая собой процесс передачи-продажи (полной или частичной) государственной (муниципальной) собственности в частные руки. В приватизации участвуют минимум две стороны, и обязательно одна из сторон — организация — даже такая, как государство.</div>
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="callme">
+    <div class="whoami">
+        <div class="whoami__description">Агент по недвижимости</div>
+        <div class="whoami__name">
+            <a class="whoami__name__link" href="/">Пономарева<br>Марина</a>
+        </div>
+    </div>
+
+    <div class="sect_menu__phonecontainer">
+        <a class="sect_menu__phone icon icon_phone">+7 902 503 23 11</a>
+    </div>
+
+    <!-- <div class="callme">
         <div class="callme__icons">
             <div class="callme__icon">
                 <a href="tel:+79028723894" class="callme__icon__link">
@@ -80,44 +84,26 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 
-<header class="welcome" style="background-image: url('<?=get_template_directory_uri();?>/assets/img/header-bg.jpg');">
-    <div class="cont cont_welcome">
-        <div class="welcome__container">
-            <div class="welcome__avatar">
-                <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/assets/img/header-photo.png" alt="">
-            </div>
-            <div class="welcome__slogan">
-                <h1 class="welcome__slogan__experience">1000</h1>
-                <h2 class="welcome__slogan__work">довольных клиентов</h2>
-            </div>
-            <div class="welcome__slogan">
-                <h1 class="welcome__slogan__experience">12</h1>
-                <h2 class="welcome__slogan__work">лет в недвижимости</h2>
+    <header class="welcome" style="background-image: url('<?=get_template_directory_uri();?>/assets/img/header-bg.jpg');">
+        <div class="cont cont_welcome">
+            <div class="welcome__container">
+                <div class="welcome__avatar">
+                    <img class="welcome__avatar__image" src="<?=get_template_directory_uri();?>/assets/img/header-photo.png" alt="">
+                </div>
+                <div class="welcome__slogan">
+                    <h1 class="welcome__slogan__experience">1000</h1>
+                    <h2 class="welcome__slogan__work">довольных клиентов</h2>
+                </div>
+                <div class="welcome__slogan">
+                    <h1 class="welcome__slogan__experience">12</h1>
+                    <h2 class="welcome__slogan__work">лет в недвижимости</h2>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<nav class="sect sect_menu">
-    <!-- <ul class="menu__list">
-        <li class="menu__listitem"><a class="menu__listitem__link" href="/">Главная</a>
-        <?
-        $pages = get_pages(); 
-        foreach ($pages as $page) { ?>
-            <li class="menu__listitem"><a class="menu__listitem__link" href="/?page_id=<?= $page->ID ?>"><?= $page->post_title ?></a>
-        <? 
-        } 
-        ?>
-    </ul> -->
-    <? wp_nav_menu(); ?>
-    <div class="sect_menu__phonecontainer">
-        <a class="sect_menu__phone icon icon_phone">+7 902 503 23 11</a>
-    </div>
-</nav>
-
-<!-- <section class="sect sect_contacts">
-    
-</section> -->
-<body <?php body_class(); ?>>
+    <nav class="sect sect_menu">
+        <? wp_nav_menu(); ?>
+    </nav>
